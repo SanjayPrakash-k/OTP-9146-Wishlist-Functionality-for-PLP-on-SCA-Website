@@ -1,0 +1,52 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.wishlist-icon-container {
+	padding: 10px;
+
+	p {
+		color: #272A27;
+	}
+
+	p:hover {
+		cursor: pointer;
+		color: #59C7FB;
+	}
+}
+
+.wishlist-active {
+  color: red;
+}
+ 
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+ 
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2970AD;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+ 
+[data-tooltip]:hover::after {
+  opacity: 1;
+}

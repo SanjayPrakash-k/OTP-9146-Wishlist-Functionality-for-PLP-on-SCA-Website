@@ -1,0 +1,105 @@
+{
+    "name": "Wishlist",
+    "fantasyName": "Whishlist",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": " ",
+        "SCS": " "
+    },
+    "version": "1.0.0",
+    "description": "Extension to implement wishlist in PLP",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/Wishlist.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Wishlist/Configuration/Wishlist.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Wishlist/Templates/jj_wishlist_wishlist.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Wishlist/Templates/jj_wishlist_wishlist.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Wishlist/Templates/jj_wishlist_wishlist.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Wishlist/Sass/_wishlist-wishlist.scss",
+            "myaccount": "Modules/Wishlist/Sass/_wishlist-wishlist.scss",
+            "checkout": "Modules/Wishlist/Sass/_wishlist-wishlist.scss"
+        },
+        "files": [
+            "Modules/Wishlist/Sass/_wishlist-wishlist.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js",
+            "myaccount": "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js",
+            "checkout": "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js",
+                    "Modules/Wishlist/JavaScript/Wishlist.View.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.Model.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js",
+                    "Modules/Wishlist/JavaScript/Wishlist.View.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.Model.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.js",
+                    "Modules/Wishlist/JavaScript/Wishlist.View.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.Model.js",
+                    "Modules/Wishlist/JavaScript/JJ.Wishlist.Wishlist.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Wishlist/SuiteScript/JJ.Wishlist.Wishlist.js",
+        "files": [
+            "Modules/Wishlist/SuiteScript/JJ.Wishlist.Wishlist.js",
+            "Modules/Wishlist/SuiteScript/Wishlist.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/Wishlist/SuiteScript2/Wishlist.Service.ss"
+        ]
+    }
+}
